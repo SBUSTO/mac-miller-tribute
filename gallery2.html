@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+<script src="script.js"></script>
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Mac Miller Gallery</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://i.pinimg.com/474x/4c/6f/34/4c6f34714b6053c3aa14fb35e7a27083.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/474x/15/80/a9/1580a983e2924a27fc6e3874fc03dabc.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/474x/52/72/61/527261e5db0a63e999223178a7ab7dca.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/474x/2d/3a/8f/2d3a8f7cfadce17262e07a79b615625c.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/474x/5d/dd5/4a/5dd54a60dea98e6ac7538ab0de38c720.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/474x/45/9c/a3/459ca344ba7201d2568c6d72ddb199ba.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/91/85/51/918551f7c3e181ee5ed3ed27070dd389.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/236x/c6/6a/2d/c66a2d684d0f32c7f778200cee6402bc.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/ca/8d/95/ca8d954d7b2e10553becbe4c972808b8.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/55/62/1c/55621c4533ceaaacb7abda5315ec8b38.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/f8/33/2f/f8332f47fbf8bbb0df210d2339a222f5.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/2a/f4/f8/2af4f8e5c747abc24e8400417563f707.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/cc/dc/fb/ccdcfb92601fdd8305a7683ed5611ab0.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://i.pinimg.com/564x/de/e5/01/dee501e946f0164e571723e78329acd3.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/a3/ab/d4/a3abd4dab0dad38efce82aece02a7df8.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/51/94/ad/5194adf606a75268aa76db95c156b610.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/564x/fd/0e/bc/fd0ebcf713bfc816417501a61d14fd6e.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/50/6e/9a/506e9a43e276bcbe9488bc20ad46673b.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/5c/f0/e9/5cf0e96b460b0701b045de9fc625118f.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/736x/4f/07/30/4f073032442910700adaa12667361dcb.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/236x/92/b6/78/92b678773435bdaeb600bc8070ad6701.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/aa/4a/15/aa4a15663d3bb94cdac397ae49742cdb.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/4d/0f/2b/4d0f2bc61efd55e4fbf577073463bc32.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/66/38/8b/66388b48477e73251e78758c33b7bc82.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/ad/86/2c/ad862c2cafe7467b006f8d31e29c12fb.jpg" style="width:100%">
+    <img src="https://i.pinimg.com/236x/29/73/6f/29736ff8965dccab6cb0edfce40758ab.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

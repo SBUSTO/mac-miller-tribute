@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  body {
+  background-color: #ececec;
+  
+  }
+
+  #navbar {
+    text-align: center;
+    color: white;
+font-size: 20px;
+}
+  
+.home { color: #C4B3F6; } /* CSS link color  */
+
+.home:hover { color: #17112A; } /* CSS link hover  */
+
+
+.gallery { color: #C4B3F6; } /* CSS link color  */
+
+.gallery:hover { color: #17112A; } /* CSS link hover  */
+
+.timeline { color: #C4B3F6; } /* CSS link color  */
+
+.timeline:hover { color: #17112A; } /* CSS link hover  */
+
